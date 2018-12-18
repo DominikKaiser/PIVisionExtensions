@@ -1,0 +1,30 @@
+<div style="background-color:lightgray; border-radius: 5px;width:100px">
+    <table class="fixed">
+        <tr>
+            <td colspan="3">{{WDLabel}}</td>
+        </tr>
+        <tr>
+            <td style='width: 40px'>{{ "IN" }}</td>
+            <td style='width: 20px'>{{"|"}}</td>
+            <td style='width: 40px'>{{ "OUT" }}</td>
+        </tr>
+        <tr>
+            <td style='width: 40px'>{{ WDIn }}</td>
+            <td style='width: 20px'>{{"|"}}</td>
+            <td style='width: 40px'>{{ WDOut }}</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div style="background-color:{{WDStatus}}; border-radius: 50px;height:100px;vertical-align: middle;">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">{{ WDError }}</td>
+        </tr>
+        <tr>
+            <td colspan="3">{{ "Delay Time: " + WDDelay + "s"}}</td>
+        </tr>
+    </table>
+
+</div>
